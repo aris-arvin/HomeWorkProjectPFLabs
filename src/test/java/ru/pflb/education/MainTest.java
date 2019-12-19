@@ -22,7 +22,7 @@ public class MainTest {
     @DataProvider(name = "LongToBinary")
     public Object[][] dtb(){
         return new Object[][]{
-                {269, "101010"},{568, "1000111000"},{10000, "10011100010000"}
+                {269, "100001101"},{568, "1000111000"},{10000, "10011100010000"}
         };
     }
 
@@ -34,7 +34,7 @@ public class MainTest {
     @DataProvider(name = "LongToHex")
     public Object[][] dth(){
         return new Object[][]{
-                {300, "12C"},{3456, "D80"},{666, "29A"}
+                {300, "12c"},{3456, "d80"},{666, "29a"}
         };
     }
 
@@ -58,7 +58,7 @@ public class MainTest {
     @DataProvider(name = "StringIsNumber")
     public Object[] sin(){
         return new Object[]{
-                "DAB", "6653", "110110101011"
+                "15b", "6653", "110110101011"
         };
     }
 
