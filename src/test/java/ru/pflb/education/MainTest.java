@@ -58,7 +58,7 @@ public class MainTest {
     @DataProvider(name = "StringIsNumber")
     public Object[] sin(){
         return new Object[]{
-                "15b", "6653", "110110101011"
+                "0xff", "6653", "110110101011"
         };
     }
 
