@@ -19,7 +19,7 @@ public class MainTest {
         System.out.println((Thread.currentThread().getId()));
     }
 
-    @DataProvider(name = "LongToBinary", parrallel = true)
+    @DataProvider(name = "LongToBinary")
     public Object[][] dtb(){
         return new Object[][]{
                 {269, "101010"},{568, "1000111000"},{10000, "10011100010000"}
@@ -31,7 +31,7 @@ public class MainTest {
         Assert.assertEquals(main.convertToBinary(a), exResult);
     }
 
-    @DataProvider(name = "LongToHex", parrallel = true)
+    @DataProvider(name = "LongToHex")
     public Object[][] dth(){
         return new Object[][]{
                 {300, "12C"},{3456, "D80"},{666, "29A"}
@@ -43,7 +43,7 @@ public class MainTest {
         Assert.assertEquals(main.convertToHex(a), exResult);
     }
 
-    @DataProvider(name = "BinaryToOctal", parrallel = true)
+    @DataProvider(name = "BinaryToOctal")
     public Object[][] bto(){
         return new Object[][]{
                 {"10000000", "200"},{"010011", "23"},{"100100110", "446"}
@@ -55,7 +55,7 @@ public class MainTest {
         Assert.assertEquals(main.convertToOctal(a), exResult);
     }
 
-    @DataProvider(name = "StringIsNumber", parrallel = true)
+    @DataProvider(name = "StringIsNumber")
     public Object[] sin(){
         return new Object[]{
                 "DAB", "6653", "110110101011"
