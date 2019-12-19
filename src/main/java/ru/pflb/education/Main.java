@@ -16,6 +16,9 @@ public class Main {
     }
 
     public static boolean checkNumber(String b){
-        return NumberUtils.isCreatable(b);
+        if (b.matches("^[0-9A-Fa-f]+$")){
+            return NumberUtils.isCreatable(Long.toBinaryString(Long.parseLong(b.substring(2), 16)));
+        }
+        else return NumberUtils.isCreatable(b);
     }
 }
